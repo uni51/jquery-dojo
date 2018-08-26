@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>jQueryのテスト</title>
+<script src="../js/jquery-1.12.4.js"></script>
+<script>
+$(function(){
+  $("#outside").width(500);
+  var ret1 = $("#outside").width();
+  var ret2 = $("#inside").width();
+  var ret3 = $("#alone").width();
+
+  console.log(ret1);
+  console.log(ret2);
+  console.log(ret3);
+});
+</script>
+</head>
+<body>
+
+<style>
+#outside {
+  width: 100px;
+}
+#inside {
+  width: 50%;
+}
+</style>
+
+<div id="outside">
+  <div id="inside">
+  </div>
+</div>
+
+<div id="alone">
+</div>
+
+</body>
+</html>

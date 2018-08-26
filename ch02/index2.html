@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>jQueryのテスト</title>
+<script src="../js/jquery-1.12.4.js"></script>
+</head>
+<script>
+$(function(){
+  // chk1にチェックあり状態の時は、retはtrueになる
+  var ret = $("#chk1").is(":checked");
+  console.log(ret);
+});
+</script>
+
+<body>
+
+<form>
+  <input type="checkbox" id="chk1">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>jQueryのテスト</title>
+<script src="../js/jquery-1.12.4.js"></script>
+<script>
+$(function(){
+  var url = $("#mylink").attr("href");
+  var url2 = $("a").attr("href");
+  var id = $("#taro").attr("data-myid");
+  console.log(url);
+  console.log(url2);
+  console.log(id);  
+});
+</script>
+</head>
+<body>
+
+<a href="http://www.yahoo.co.jp/" id="mylink">Yahoo</a>
+<a href="http://www.google.co.jp/">Google</a>
+
+<span id="taro" data-myid="101">太郎</span>
+
+</body>
+</html>

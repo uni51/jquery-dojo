@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>jQueryのテスト</title>
+<script src="../js/jquery-1.12.4.js"></script>
+<script>
+$(function(){
+  $('img').attr("title", function (index, attr) {
+    return "[" + index + "]" + attr + this.alt;
+  });
+});
+</script>
+</head>
+<body>
+
+  <img src="taro.gif" alt="太郎" title="15歳" />
+  <img src="jiro.gif" alt="次郎"  title="10歳" />
+  <img src="saburo.gif" alt="三郎" title="8歳" />
+
+</body>
+</html>

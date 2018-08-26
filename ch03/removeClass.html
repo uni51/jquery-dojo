@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>jQueryのテスト</title>
+<script src="../js/jquery-1.12.4.js"></script>
+<script>
+$(function(){
+  $("li").removeClass("woman");
+});
+</script>
+</head>
+<body>
+
+<style type="text/css">
+.woman {
+  background-color: pink;
+}
+</style>
+
+<ul>
+  <li>太郎</li>
+  <li>次郎</li>
+  <li class="woman">花子</li>
+</ul>
+
+</body>
+</html>
